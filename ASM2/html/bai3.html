@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style3.css">
+    <title>Bai 3</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>BÁN HÀNG</h1>
+        <select>
+            <option value="">Mức giá</option>
+            <option onclick="">Thấp đến cao</option>
+            <option onclick="">Cao đến thấp</option>
+
+        </select>
+        <hr>
+        <table>
+            <tr>
+                <th><input type="checkbox" id="all" onchange="checkAll(this)"></th>
+                <th>Hàng hóa</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="option" onclick="enable()"></td>
+                <td>iPhone9</td>
+                <td class="price">700</td>
+                <td><input type="text" id="quantity" disabled value="1" onchange="checksum()"></td>
+                <td class="sum"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="option" onclick="enable()"></td>
+                <td>Samsung</td>
+                <td class="price">400</td>
+                <td><input type="text" id="quantity" disabled value="1" onchange="checksum()"></td>
+                <td class="sum"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="option" onclick="enable()"></td>
+                <td>Nokia</td>
+                <td class="price">100</td>
+                <td><input type="text" id="quantity" disabled value="1" onchange="checksum()"></td>
+                <td class="sum"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="option" onclick="enable()"></td>
+                <td>Sony Xperia</td>
+                <td class="price">450</td>
+                <td><input type="text" id="quantity" disabled value="1" onchange="checksum()"></td>
+                <td class="sum"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="option" onclick="enable()"></td>
+                <td>Motorola</td>
+                <td class="price">180</td>
+                <td><input type="text" id="quantity" disabled value="1" onchange="checksum()"></td>
+                <td class="sum"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="option" onclick="enable()"></td>
+                <td>Oppo</td>
+                <td class="price">600</td>
+                <td><input type="text" id="quantity" disabled value="1" onchange="checksum()"></td>
+                <td class="sum"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="option" onclick="enable()"></td>
+                <td>bPhone</td>
+                <td class="price">90</td>
+                <td><input type="text" id="quantity" disabled value="1" onchange="checksum()"></td>
+                <td class="sum"></td>
+            </tr>
+            <tr>
+                <td colspan="4" id="tong"><b>TỔNG</b></td>
+                <td id="total">0</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="../js/bai3.js"></script>
+
+</html>

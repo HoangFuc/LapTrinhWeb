@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+header {
+    float: left;
+    width: 100%;
+    background-color: #CCC;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+.main {
+    float: left;
+    width: calc(100% - 100px);
+    padding: 0px 50px;
+}

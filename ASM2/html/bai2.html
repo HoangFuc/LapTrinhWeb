@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>Bai 2</title>
+</head>
+
+<body>
+    <div id="noidung">
+        <h1>Đăng ký thành viên</h1>
+        <form id="form">
+            <div class="form-group">
+                <legend>Mã sinh viên</legend>
+                <input type="text" class="dk" id="msv" required>
+                <p id="message1"></p>
+            </div>
+
+            <div class="form-group">
+                <legend>Họ và Tên</legend>
+                <input type="text" class="dk" id="name" required>
+                <p id="message2"></p>
+            </div>
+
+            <div class="form-group">
+                <legend>Email</legend>
+                <input type="email" class="dk" id="email" required>
+                <p id="message3"></p>
+            </div>
+
+            <div class="form-group">
+                <legend>Giới tính</legend>
+                <div id="frames">
+                    <div class="sex">
+                        <input type="radio" name="gender" required> Nam
+                        <input type="radio" name="gender" required> Nữ
+                    </div>
+                </div>
+                <p class="gender p"></p>
+            </div>
+
+            <div class="form-group">
+                <legend>Sở thích</legend>
+                <div id="frames2">
+                    <div id="hobby">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label>Đọc sách</label>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label>Du lịch</label>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label>Âm nhạc</label>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label>Ẩm thực</label>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label>Khác</label>
+                    </div>
+                </div>
+                <p class="message4"></p>
+            </div>
+
+            <div class="form-group">
+                <legend>Quốc tịch</legend>
+                <select name="select" class="select" id="nationality">
+                    <option value="0">Chọn Quốc Tịch</option>
+                    <option value="1">Việt Nam</option>
+                    <option value="2">China</option>
+                    <option value="3">Japan</option>
+                    <option value="4">Korea</option>
+                </select>
+                <p class="nationality p"></p>
+            </div>
+
+            <div class="form-group">
+                <legend>Ghi chú</legend>
+                <textarea type="textarea" class="note" id="note" maxlength="200" required></textarea><br>
+                <p id="message5"></p>
+            </div>
+            <div class="but">
+                <br><button class="button" onclick="validateInput()">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="../js/bai2.js"></script>
+
+</html>
